@@ -58,26 +58,11 @@
   return B;
   }; 
 
-  5.const Find_Num = (array,N,M) => 
-  {
-    let c=0;
-    for(let i=0;i<N;i++)
-    {
-      if(array[i]==M)
-      {
-        c++;
-      }
-    }
-    
-    if(c>0)
-    {
-      return "YES";
-    }
+  5.if(array.indexOf(M)==-1)
+    return 'NO'
     else{
-      return "NO";
-    }
-    
-  };
+    return 'YES'
+  }
 
 
   6. const highAge = (N, Arr) => 
